@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role>
+    <identifier>Everybody</identifier>
+    <role>
+        <identifier>Developer</identifier>
+        <displayName>Developer</displayName>
+    </role>
+    <role>
+        <identifier>ScrumMaster</identifier>
+        <displayName>Scrum Master</displayName>
+    </role>
+    <role>
+        <identifier>ProductOwner</identifier>
+        <displayName>Product Owner</displayName>
+    </role>
+</role>

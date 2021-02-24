@@ -1,0 +1,8 @@
+HistoryTaskData #class
+time.logging.tool.HistoryTask #namespace
+sprint String #field
+sprint PERSISTENT #fieldModifier
+description String #field
+description PERSISTENT #fieldModifier
+dates String #field
+dates PERSISTENT #fieldModifier

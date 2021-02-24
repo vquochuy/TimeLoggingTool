@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<userConfig>
+    <user>
+        <username>dmngo</username>
+        <role>Developer</role>
+        <role>ScrumMaster</role>
+    </user>
+    <user>
+        <username>vqhuy</username>
+        <role>Developer</role>
+    </user>
+    <user>
+        <username>helene</username>
+        <role>ProductOwner</role>
+    </user>
+</userConfig>
