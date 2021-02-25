@@ -5,24 +5,24 @@ import java.util.Date;
 public class Task {
 
 	private int id;
-	private Sprint sprint;
+	private WorkItem item;
 	private String summary;
 	private Story story;
-	private Epic epic;
+	private int timespent;	
 	private Date created;
 	private Date updated;
-	private int timespent;
+	
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public Sprint getSprint() {
-		return sprint;
+	public WorkItem getItem() {
+		return item;
 	}
-	public void setSprint(Sprint sprint) {
-		this.sprint = sprint;
+	public void setItem(WorkItem item) {
+		this.item = item;
 	}
 	public String getSummary() {
 		return summary;
@@ -36,11 +36,11 @@ public class Task {
 	public void setStory(Story story) {
 		this.story = story;
 	}
-	public Epic getEpic() {
-		return epic;
+	public int getTimespent() {
+		return timespent;
 	}
-	public void setEpic(Epic epic) {
-		this.epic = epic;
+	public void setTimespent(int timespent) {
+		this.timespent = timespent;
 	}
 	public Date getCreated() {
 		return created;
@@ -54,13 +54,6 @@ public class Task {
 	public void setUpdated(Date updated) {
 		this.updated = updated;
 	}
-	public int getTimespent() {
-		return timespent;
-	}
-	public void setTimespent(int timespent) {
-		this.timespent = timespent;
-	}
-	
 	
 	
 }

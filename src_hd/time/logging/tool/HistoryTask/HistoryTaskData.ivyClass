@@ -1,2 +1,6 @@
 HistoryTaskData #class
 time.logging.tool.HistoryTask #namespace
+sprints java.util.List<time.logging.model.Sprint> #field
+sprints PERSISTENT #fieldModifier
+workItem time.logging.model.WorkItem #field
+workItem PERSISTENT #fieldModifier

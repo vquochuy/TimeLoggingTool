@@ -17,11 +17,8 @@
 				<div>
 					<p:outputLabel for="option" value="Sprint: "/>
 	               	<p:selectOneMenu id="option">
-	                    <f:selectItem itemLabel="Select One" itemValue=""/>
-	                    <f:selectItem itemLabel="Sprint 21.0" itemValue="Sprint 21.0"/>
-	                    <f:selectItem itemLabel="Option2" itemValue="Option2"/>
-	                    <f:selectItem itemLabel="Option3" itemValue="Option3"/>
-	                    
+	                    <f:selectItem itemLabel="Select One" itemValue="#{data.sprints}"/>
+	                    <f:selectItems value="#{data.sprints}"/>	                    
 	                </p:selectOneMenu>
 	                <p:outputLabel value="Total: 0 hours"/>
 				</div>		
@@ -55,12 +52,25 @@
 					</div>					
 				</div>
 			</div>		
-			<p:dialog header="Header" widgetVar="dlg3" minHeight="40" width="350" showEffect="fade">
-			    <p class="p-m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			    <f:facet name="footer">
-			        <p:commandButton type="button" value="No" onclick="PF('dlg3').hide()" styleClass="ui-button-flat p-mr-2" style="width: 6rem" />
-			        <p:commandButton type="button" value="Yes" style="width: 5rem" />
-			    </f:facet>
+			<p:dialog header="Add Working Item" widgetVar="dlg3" minHeight="120" width="750" showEffect="fade">
+				<div>
+				 	<div class="card">
+				 		<p:panelGrid columns="2">
+							   <p:outputLabel for="text1" value="Text 1"/>
+						        <p:inputText id="text1"/>
+						
+						        <p:outputLabel for="text2" value="Text 2"/>
+						        <p:inputText id="text2"/>
+						
+						        <p:outputLabel for="date" value="Date"/>
+						        <p:calendar id="date" pattern="dd-MM-yyyy" mask="true" style="width:auto"/>
+					    </p:panelGrid>
+				 	</div>			      	
+				    <f:facet name="footer">
+				        <p:commandButton type="button" value="No" onclick="PF('dlg3').hide()" styleClass="ui-button-flat p-mr-2" style="width: 6rem" />
+				        <p:commandButton type="button" value="Yes" onclick="PF('dlg3').hide()" style="width: 5rem" />
+				    </f:facet>
+				</div>			    
 			</p:dialog>
 				
 		</ui:define>

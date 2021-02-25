@@ -7,11 +7,11 @@ public class Sprint {
 
 	private int id;
 	private String name;
-	private Date created;
-	private Date startDate;
+	private Date startDate;	
 	private Date endDate;
+	private List<WorkItem> workItems;	
+	private Date created;
 	private Date updated;
-	private List<Task> taks;
 	
 	public int getId() {
 		return id;
@@ -25,18 +25,6 @@ public class Sprint {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Date getCreated() {
-		return created;
-	}
-	public void setCreated(Date created) {
-		this.created = created;
-	}
-	public Date getStartDate() {
-		return startDate;
-	}
-	public void setStartDate(Date startDate) {
-		this.startDate = startDate;
-	}
 	public Date getEndDate() {
 		return endDate;
 	}
@@ -49,12 +37,27 @@ public class Sprint {
 	public void setUpdated(Date updated) {
 		this.updated = updated;
 	}
-	public List<Task> getTaks() {
-		return taks;
+	public List<WorkItem> getWorkItems() {
+		return workItems;
 	}
-	public void setTaks(List<Task> taks) {
-		this.taks = taks;
+	public void setWorkItems(List<WorkItem> workItems) {
+		this.workItems = workItems;
 	}
-	
+	public Date getCreated() {
+		return created;
+	}
+	public void setCreated(Date created) {
+		this.created = created;
+	}
+	public Date getStartDate() {
+		return startDate;
+	}
+	public void setStartDate(Date startDate) {
+		this.startDate = startDate;
+	}
+	@Override
+	public String toString() {
+		return ""+name;
+	}	
 	
 }

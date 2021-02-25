@@ -1,7 +1,6 @@
 package time.logging.model;
 
 import java.util.Date;
-import java.util.List;
 
 
 public class Story {
@@ -10,7 +9,6 @@ public class Story {
 	private Date startDate;
 	private Date endDate;
 	private Date updated;
-	private List<Task> tasks;
 	private Epic epic;
 	
 	public int getId() {
@@ -42,12 +40,6 @@ public class Story {
 	}
 	public void setUpdated(Date updated) {
 		this.updated = updated;
-	}
-	public List<Task> getTasks() {
-		return tasks;
-	}
-	public void setTasks(List<Task> tasks) {
-		this.tasks = tasks;
 	}
 	public Epic getEpic() {
 		return epic;

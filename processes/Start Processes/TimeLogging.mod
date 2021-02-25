@@ -53,7 +53,7 @@ Tg0 f1 337 49 30 30 0 15 #rect
 Tg0 f1 @|EndIcon #fIcon
 Tg0 f3 targetWindow NEW #txt
 Tg0 f3 targetDisplay TOP #txt
-Tg0 f3 richDialogId time.logging.tool.LoggedTime #txt
+Tg0 f3 richDialogId time.logging.tool.HistoryTask #txt
 Tg0 f3 startMethod start() #txt
 Tg0 f3 type time.logging.tool.TimeLoggingData #txt
 Tg0 f3 requestActionDecl '<> param;' #txt
