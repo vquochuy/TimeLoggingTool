@@ -56,19 +56,22 @@
 				<div>
 				 	<div class="card">
 				 		<p:panelGrid columns="2">
-							   <p:outputLabel for="text1" value="Text 1"/>
-						        <p:inputText id="text1"/>
+							   <p:outputLabel for="sprint" value="Sprint "/>
+						        <p:inputText id="sprint" required="true"/>
 						
-						        <p:outputLabel for="text2" value="Text 2"/>
-						        <p:inputText id="text2"/>
+						        <p:outputLabel for="summary" value="Take Description"/>
+						        <p:inputText id="summary" required="true"/>
+						        
+						        <p:outputLabel for="story" value="Story"/>
+						        <p:inputText id="story" required="true"/>
 						
 						        <p:outputLabel for="date" value="Date"/>
 						        <p:calendar id="date" pattern="dd-MM-yyyy" mask="true" style="width:auto"/>
 					    </p:panelGrid>
 				 	</div>			      	
 				    <f:facet name="footer">
-				        <p:commandButton type="button" value="No" onclick="PF('dlg3').hide()" styleClass="ui-button-flat p-mr-2" style="width: 6rem" />
-				        <p:commandButton type="button" value="Yes" onclick="PF('dlg3').hide()" style="width: 5rem" />
+				        <p:commandButton type="button" value="Cancel" onclick="PF('dlg3').hide()" styleClass="ui-button-flat p-mr-2" style="width: 10rem" />
+				        <p:commandButton type="button" value="Create" onclick="PF('dlg3').hide()" style="width: 10rem" />
 				    </f:facet>
 				</div>			    
 			</p:dialog>

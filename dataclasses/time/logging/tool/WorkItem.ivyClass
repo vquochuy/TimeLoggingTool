@@ -1,0 +1,21 @@
+WorkItem #class
+true #isEntity
+time.logging.tool #namespace
+workitem #dbTableName
+id Integer #field
+id Identifier #fieldComment
+id PERSISTENT #fieldModifier
+id ID #fieldModifier
+id GENERATED #fieldModifier
+startDate Date #field
+startDate PERSISTENT #fieldModifier
+username String #field
+username PERSISTENT #fieldModifier
+created DateTime #field
+created PERSISTENT #fieldModifier
+updated DateTime #field
+updated PERSISTENT #fieldModifier
+sprint time.logging.tool.SprintData #field
+sprint PERSISTENT #fieldModifier
+tasks java.util.List<time.logging.tool.TaskData> #field
+tasks PERSISTENT #fieldModifier

@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"/>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+    <persistence-unit name="WorkItem">
+        <non-jta-data-source>Postgres</non-jta-data-source>
+        <class>time.logging.model.WorkItem</class>
+        <properties/>
+    </persistence-unit>
+    <persistence-unit name="Epic">
+        <non-jta-data-source>Postgres</non-jta-data-source>
+        <class>time.logging.model.Epic</class>
+        <properties/>
+    </persistence-unit>
+</persistence>

@@ -25,5 +25,8 @@ public class Epic {
 	public void setStories(List<Story> stories) {
 		this.stories = stories;
 	}
+	public Epic() {
+	}
+	
 	
 }

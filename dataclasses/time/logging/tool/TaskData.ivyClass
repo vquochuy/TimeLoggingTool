@@ -1,0 +1,9 @@
+TaskData #class
+true #isEntity
+time.logging.tool #namespace
+task #dbTableName
+id Integer #field
+id Identifier #fieldComment
+id PERSISTENT #fieldModifier
+id ID #fieldModifier
+id GENERATED #fieldModifier

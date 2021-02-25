@@ -1,0 +1,9 @@
+SprintData #class
+true #isEntity
+time.logging.tool #namespace
+sprint #dbTableName
+id Integer #field
+id Identifier #fieldComment
+id PERSISTENT #fieldModifier
+id ID #fieldModifier
+id GENERATED #fieldModifier
