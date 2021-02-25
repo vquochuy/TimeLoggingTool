@@ -8,9 +8,9 @@
 	xmlns:pm="http://primefaces.org/mobile">
 <h:body>
 	<ui:composition template="/layouts/full.xhtml">
-		<ui:define name="title">LoggedTime</ui:define>
+		<ui:define name="title">SprintTimesheet</ui:define>
 		<ui:define name="content">
-			<div><h1>Logged Time</h1></div>
+			<div><h1>Sprint Time sheet</h1></div>
 			<div>
 				<div>
 					<p:outputLabel for="option" value="Sprint: "/>
@@ -20,7 +20,7 @@
 	                    <f:selectItem itemLabel="Option2" itemValue="Option2"/>
 	                    <f:selectItem itemLabel="Option3" itemValue="Option3"/>	                    
 	                </p:selectOneMenu>
-	                <p:outputLabel value="Total: 0 hours"/>
+	               	<h:commandButton value = "Export" onclick = "" id="export" />
 				</div>
 				<div>
 					<div>
